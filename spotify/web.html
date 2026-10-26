@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe"
+      crossorigin="anonymous"
+    />
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+BE+WAL+Guides&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Storm&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=home"
+    />
+
+    <link rel="stylesheet" href="web.css" />
+  </head>
+  <body>
+    <nav class="navbar md:navbar-expand bg-1" style="height: 60px">
+      <nav class="navbar bg-1 fg-2">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img
+              src="assets/spotify_logo_white-removebg-preview.png"
+              alt=""
+              width="35"
+              height="35"
+              style="margin-top: -8px; margin-left: 15px"
+            />
+          </a>
+        </div>
+      </nav>
+      <button class="home-btn">
+        <span class="material-symbols-outlined">home</span>
+      </button>
+      <form class="search" role="search">
+        <!-- <span class="material-symbols-outlined"> search </span> -->
+        <input
+          class="form-control"
+          type="search"
+          placeholder=" What do you want to play?"
+          aria-label="Search"
+        />
+      </form>
+      <div class="drawer-body1">
+        <ul class="nav navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Premium</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Support</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Download</a>
+          </li>
+        </ul>
+      </div>
+      <div class="drawer-body">
+        <ul class="nav navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Install App</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sign Up</a>
+          </li>
+        </ul>
+        <button class="log-in">Log in</button>
+      </div>
+    </nav>
+
+    <div class="grid">
+      <div class="div-1">
+        <div class="nav">
+          <p>Your Library</p>
+          <button>+ Create</button>
+        </div>
+        <div class="box-container">
+          <div class="box-1">
+            <h4>Create your first playlist</h4>
+            <p>It's easy, we'll help you.</p>
+            <button>Create playlist</button>
+          </div>
+          <div class="box-2">
+            <h4>Let's find some podcasts to follow</h4>
+            <p>We'll keep you updated on new episodes</p>
+            <button>Browse podcasts</button>
+          </div>
+        </div>
+        <footer>
+          <tr>
+            <td>Legal</td>
+            <td>Safety&PrivacyCenter</td>
+            <td>PrivacyPolicies</td>
+            <td>Cookies</td>
+          </tr>
+          <br />
+          <tr>
+            <td>Aboutads</td>
+            <td>Accessibility</td>
+          </tr>
+        </footer>
+        <p class="cookies">Cookies</p>
+        <button class="en">English</button>
+      </div>
+      <div class="div-2">
+        <div class="nav">
+          <h3>Trending songs</h3>
+          <p>Show all</p>
+        </div>
+        <div class="trendingsongs">
+          <div
+            id="carouselMultiple"
+            class="carousel slide"
+            data-bs-ends="stop"
+            style="--bs-carousel-items: 3; --bs-carousel-items-gap: 5px"
+          >
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <button
+                  class="btn-icon btn-sm"
+                  type="button"
+                  data-bs-target="#carouselMultiple"
+                  data-bs-slide="prev"
+                  style="--bs-carousel-control-icon-width: 1rem"
+                >
+                  <span class="carousel-icon-prev" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="btn-icon btn-sm"
+                  type="button"
+                  data-bs-target="#carouselMultiple"
+                  data-bs-slide="next"
+                  style="--bs-carousel-control-icon-width: 1rem"
+                >
+                  <span class="carousel-icon-next" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+            <div class="carousel-inner" style="height: 300px">
+              <div class="carousel-item active">
+                <section class="card" style="max-width: 320px; height: 100px">
+                  <img
+                    src="assets/mavo-goyard.jpg"
+                    class="card-img-top"
+                    alt=""
+                    width="100"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">Goyard</h4>
+                    <p class="card-text">Mavo</p>
+                  </div>
+                </section>
+              </div>
+              <div class="carousel-item">
+                <section class="card-1" style="max-width: 320px; height: 100px">
+                  <img
+                    src="assets/Doublegee-ore agbako.jpg"
+                    class="card-img-top"
+                    alt=""
+                    width="100"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">Ore Agbako</h4>
+                    <p class="card-text">Double Gee</p>
+                  </div>
+                </section>
+              </div>
+              <div class="carousel-item">
+                <section class="card-2" style="max-width: 320px; height: 100px">
+                  <img
+                    src="assets/shallipopi-.com.jpg"
+                    class="card-img-top"
+                    alt=""
+                    width="100"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">.com</h4>
+                    <p class="card-text">Shallipopi</p>
+                  </div>
+                </section>
+              </div>
+              <!-- <div class="carousel-item">
+                <section class="card-3" style="max-width: 320px; height: 100px">
+                  <img
+                    src="assets/salt-6uff#odumodublvck.jpg"
+                    class="card-img-top"
+                    alt=""
+                    width="100"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text"></p>
+                  </div>
+                </section>
+              </div> -->
+              <div class="carousel-item">
+                <section class="card-3" style="max-width: 320px; height: 100px">
+                  <img
+                    src="assets/olamide-burukutu.jpg"
+                    class="card-img-top"
+                    alt="..."
+                    width="100"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">Burukutu</h4>
+                    <p class="card-text">Olamide</p>
+                  </div>
+                </section>
+              </div>
+              <div class="carousel-item">
+                <section class="card-4" style="max-width: 320px; height: 100px">
+                  <img
+                    src="assets/allahamdi-tegaboi.jpg"
+                    class="card-img-top"
+                    alt=""
+                    width="100"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">Alhamdululillal</h4>
+                    <p class="card-text">
+                      Tega Boi Dc, Zerry Dl <br />Rord Kelly
+                    </p>
+                  </div>
+                </section>
+              </div>
+              <div class="carousel-item">
+                <section class="card-5" style="max-width: 320px; height: 100px">
+                  <img
+                    src="assets/tuffking-soundof.jpg"
+                    class="card-img-top"
+                    alt=""
+                    width="100"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">Sound of Freedom</h4>
+                    <p class="card-text">Tuff King</p>
+                  </div>
+                </section>
+              </div>
+              <div class="carousel-item">
+                <section class="card-6" style="max-width: 320px; height: 100px">
+                  <img
+                    src="assets/fola-waf.jpg"
+                    class="card-img-top"
+                    alt=""
+                    width="100"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">waf</h4>
+                    <p class="card-text">Fola</p>
+                  </div>
+                </section>
+              </div>
+              <div class="carousel-item">
+                <section class="card-7" style="max-width: 320px; height: 100px">
+                  <img
+                    src="assets/coachella-no11.jpg"
+                    class="card-img-top"
+                    alt=""
+                    width="100"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">Coachella</h4>
+                    <p class="card-text">No 11</p>
+                  </div>
+                </section>
+              </div>
+              <div class="carousel-item">
+                <section class="card-8" style="max-width: 320px; height: 100px">
+                  <img
+                    src="assets/glorified.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">Glorified</h4>
+                    <p class="card-text">Kae Strings</p>
+                  </div>
+                </section>
+              </div>
+              <div class="carousel-item">
+                <section class="card-9" style="max-width: 320px; height: 100px">
+                  <img
+                    src="assets/youngalhaji.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">Young Alhaji</h4>
+                    <p class="card-text"></p>
+                  </div>
+                </section>
+              </div>
+              <div class="carousel-item">
+                <section
+                  class="card-10"
+                  style="max-width: 320px; height: 100px"
+                >
+                  <img
+                    src="assets/chella-prettynun.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">Pretty-nun</h4>
+                    <p class="card-text"></p>
+                  </div>
+                </section>
+              </div>
+              <div class="carousel-item">
+                <section
+                  class="card-11"
+                  style="max-width: 320px; height: 100px"
+                >
+                  <img src="assets/jogodo.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h4 class="card-title">Jogodo</h4>
+                    <p class="card-text">Asake*Wizkid</p>
+                  </div>
+                </section>
+              </div>
+              <div class="carousel-item">
+                <section
+                  class="card-12"
+                  style="max-width: 320px; height: 100px"
+                >
+                  <img
+                    src="assets/shenk me -mavo.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">Shenk Me</h4>
+                    <p class="card-text">Mavo*Dj ops</p>
+                  </div>
+                </section>
+              </div>
+              <div class="carousel-item">
+                <section
+                  class="card-13"
+                  style="max-width: 320px; height: 100px"
+                >
+                  <img
+                    src="assets/Godfidence.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">Godfidence</h4>
+                    <p class="card-text"></p>
+                  </div>
+                </section>
+              </div>
+              <div class="carousel-item">
+                <section
+                  class="card-14"
+                  style="max-width: 320px; height: 100px"
+                >
+                  <img
+                    src="assets/forgiveness.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">Gratitude</h4>
+                    <p class="card-text">Asake</p>
+                  </div>
+                </section>
+              </div>
+              <div class="carousel-item">
+                <section
+                  class="card-15"
+                  style="max-width: 320px; height: 100px"
+                >
+                  <img
+                    src="assets/time-samad.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">Time</h4>
+                    <p class="card-text">Samad</p>
+                  </div>
+                </section>
+              </div>
+              <div class="carousel-item">
+                <section
+                  class="card-16"
+                  style="max-width: 320px; height: 100px"
+                >
+                  <img
+                    src="assets/carterefe-metyou.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">Met You</h4>
+                    <p class="card-text">Carter-efe</p>
+                  </div>
+                </section>
+              </div>
+              <div class="carousel-item">
+                <section
+                  class="card-17"
+                  style="max-width: 320px; height: 100px"
+                >
+                  <img
+                    src="assets/rema-oh no.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">Oh No</h4>
+                    <p class="card-text">Rema</p>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

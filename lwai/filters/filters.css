@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.first img {
+    /* circle */
+    clip-path: circle(50% at 50% 50%);
+    /* vintage  */
+    filter: blur(0px) brightness(90%) contrast(110%) grayscale(0%)
+    hue-rotate(-10deg) invert(0%) saturate(80%) sepia(50%);
+}
+
+.second img {
+    /* oval */
+    clip-path: ellipse(40% 25% at 50% 50%);
+      filter: blur(0px) brightness(95%) contrast(150%) grayscale(100%)
+    hue-rotate(0deg) invert(0%) saturate(0%) sepia(10%);
+}
+
+.third-img {
+    /* triangle */
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+      filter: blur(0px) brightness(105%) contrast(125%) grayscale(0%)
+    hue-rotate(280deg) invert(0%) saturate(200%) sepia(50%);
+}
+
+.fourth-img {
+    clip-path: polygon(
+        50% 0%,
+        63% 38%,
+        100% 38%,
+        69% 59%,
+        82% 100%,
+        50% 75%,
+        18% 100%,
+        31% 59%,
+        0% 38%,
+        37% 38%,
+    );
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    background-color: beige;
+}
+
+.nav .right a {
+    margin-left: 40px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+@media (max-width: 440px) {
+    .nav .right a {
+        display: none;
+    }
+    .first img {
+        clip-path: ellipse(40% 25% at 50% 50%);
+    }
+}
+
+@media (max-width: 1032px) {
+       .nav .right a {
+        display: none;
+    }
+}
+
+@media print {
+    body {
+        background-color: white;
+    }
+         .nav {
+        display: none;
+    }
+}

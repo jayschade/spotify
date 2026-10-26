@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0%;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #1B1B32;
+    
+}
+
+
+.top-nav {
+    background-color: #0A0A23;
+    display: flex;
+    width: 100%;
+    height: 35px;
+    align-items: center;
+    grid-template-columns: 1fr auto 1fr;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+}
+
+.header1 {
+    margin-top: 70px;
+}
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-btn {
+    padding: 5px 10px;
+    border: 2px;
+    border-radius: 0px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+header h1 {
+    color: white;
+    text-align: right;
+    justify-content: center;
+    font-weight: 400;
+    margin: 0;
+}
+
+.ww-btn {
+ border-radius: 1px;
+ background-color: #0A0A23;
+ color: white;
+ padding: 0px 0px;
+}
+
+.menu-btn {
+border-radius: .5px;
+background-color: #0A0A23;
+color: white;
+padding: 4px 5px;
+}
+
+.donate-btn {
+border-radius: 1px;
+background-color: #AB7631;
+padding: 4px 10px;
+border: 1px solid #FEAC32;
+color: black;
+}
+
+.header-button {
+    margin: 0%;
+    gap: 2px;
+    height: 20px;
+}
+
+.search-bar {
+    width: 300px;
+    height: 25px;
+    padding: 5px 10px;
+    border: 1px solid gray;
+    border-radius: 2px;
+    background-color: #3B3B4F;
+}
+
+.nav-btn {
+    display: flex;
+    height: 20px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-btn {
+    height: 28px;
+    padding: 5px 15px;
+    border: 1px solid white;
+    color: white;
+    font-size: 16px;
+    margin: 0;
+}
+
+.nav-btn button {
+    margin: 0;
+}
+
+.header1 {
+    background-color: #002EAD;
+    color: white;
+    position: fixed;
+    top: 35px;
+    left: 0;
+    box-sizing: border-box;
+    z-index: 999;
+    height: 45px;
+    text-align: center;
+    padding: 10px;
+    font-weight: 600;
+    margin: 0;
+    display: block;
+    width: 100%;
+}
+
+.header1 p {
+    margin: 0;
+    font-size: 17px;
+}
+
+.header1 a {
+    color: white;
+    font-weight: 600;
+}
+
+body {
+    color: white;
+    margin: 0;
+
+}
+
+.content {
+    background-color: #1B1B32;
+    height: 3000vh;
+    width: 100vw;
+    margin-top: 100px;
+    padding: 40px 7%;
+    line-height: 1.4;
+}
+
+.content h4 {
+    color: white;
+}
+
+.content p {
+    margin: 0;
+}
+
+.content h1 {
+    margin: 0;
+}
+
+main {
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    padding-top: 0px;
+    font-size: 25px;
+}
+
+.author-img {
+    width: 50px;
+    height: 50px;
+}
+
+.maths-img {
+    width: 1050px;
+    height: 1050px;
+}
+
+ol {
+    padding-left: 55px;
+}
+
+li {
+    padding-left: 10px;
+}
+
+.code-img {
+    height: 150px;
+    width: 900px;
+}
+
+.code-img2 {
+    height: 500px;
+    width: 900px;
+}
+
+.bpfcss-img {
+    height: 85px;
+    width: 800px;
+    padding-left: 90px;
+}
+
+.bpfcss-img2 {
+    height: 87px;
+    width: 800px;
+    padding-left: 90px;
+}
+
+.em-1 {
+     height: 150px;
+     width: 800px;
+}
+
+.em-2 {
+     height: 480px;
+     width: 800px;
+}
+
+.paragraph {
+     height: 100px;
+     width: 670px;
+}
+
+.em-3 {
+     height: 150px;
+     width: 600px;
+}
+
+.em-4 {
+      height: 250px;
+      width: 800px
+}
+
+.child-img {
+     height: 100px;
+     width: 670px;
+     padding-left: 90px;
+}
+
+.percent-1 {
+     height: 90px;
+     width: 800px;
+}
+
+.percent-two {
+     height: 470px;
+      width: 800px
+}
+
+.color-box {
+    height: 320px;
+    width: 700px;
+    padding-left: 50px;
+}
+
+.vh-1 {
+     height: 70px;
+     width: 800px;
+}
+
+.vh-2 {
+      height: 120px;
+     width: 800px;
+} 
+
+.img-vh {
+     height: 320px;
+    width: 700px;
+    padding-left: 50px;
+}
+
+.vh-3 {
+      height: 160px;
+     width: 800px;
+}
+
+.vh-4 {
+     height: 90px;
+     width: 800px;
+}
+
+.vh-5 {
+      height: 150px;
+      width: 800px;
+}
+
+.vh40-img {
+     height: 300px;
+     width: 600px;
+      padding-left: 50px;
+}
+
+.vw-1 {
+    height: 90px;
+     width: 800px;
+}
+
+.vw-2 {
+     height: 300px;
+     width: 600px;
+      padding-left: 50px;
+}
+
+.ch-1 {
+     height: 90px;
+     width: 800px;
+}
+
+.ch-2 {
+     height: 200px;
+     width: 800px;
+}
+
+.px-1 {
+     height: 90px;
+     width: 800px;
+}
+
+.px-2 {
+     height: 210px;
+     width: 800px;
+}
+
+.px-3 {
+     height: 120px;
+     width: 800px;
+}
+
+.header-image {
+    width: 300px;
+    height: 25px;
+}

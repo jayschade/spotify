@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe"
+      crossorigin="anonymous"
+    />
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar md:navbar-expand bg-1">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="btn-icon navbar-toggler"
+          type="button"
+          data-bs-toggle="drawer"
+          data-bs-target="#navbarDrawer"
+          aria-controls="navbarDrawer"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon" aria-hidden="true"></span>
+        </button>
+        <dialog
+          class="drawer drawer-end"
+          tabindex="-1"
+          id="navbarDrawer"
+          aria-labelledby="navbarDrawerLabel"
+        >
+          <div class="drawer-header">
+            <h5 class="drawer-title" id="navbarDrawerLabel">Menu</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="drawer"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="drawer-body mb-2 md:mb-0">
+            <ul class="nav navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <button
+                  class="nav-link"
+                  type="button"
+                  data-bs-toggle="menu"
+                  aria-expanded="false"
+                >
+                  Menu
+                </button>
+                <div class="menu">
+                  <a class="menu-item" href="#">Action</a>
+                  <a class="menu-item" href="#">Another action</a>
+                  <hr class="menu-divider" />
+                  <a class="menu-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="hstack gap-2" role="search">
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn-solid btn-icon theme-secondary" type="submit">
+                <svg class="bi" width="16" height="16">
+                  <use href="#search" />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </dialog>
+      </div>
+    </nav>
+
+    <div
+      id="carouselExampleDark"
+      class="carousel carousel-overlay slide"
+      data-bs-theme="dark"
+    >
+      <div class="carousel-inner">
+        <div
+          class="carousel-item active"
+          data-bs-interval="10000"
+          style="background-image: url(asets/assets/aella-credit.png)"
+        >
+          <img
+            src="asets/assets/puppy.jpeg"
+            class="d-block w-100 rounded-5"
+            alt="..."
+          />
+          <div
+            class="box"
+            style="
+              width: 900px;
+              height: 400px;
+              background-color: red;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            "
+          >
+            Hello
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img
+            src="asets/assets/Andela-log-landscape-blue-400px.png"
+            class="d-block w-100 rounded-5"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="asets/assets/aella-credit.png"
+            class="d-block w-100 rounded-5"
+            alt="..."
+          />
+        </div>
+      </div>
+      <div class="carousel-overlay-controls">
+        <button
+          class="btn-icon btn-sm btn-subtle theme-secondary"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-icon-prev" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <button
+          class="btn-icon btn-sm btn-subtle theme-secondary"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="next"
+        >
+          <span class="carousel-icon-next" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div
+      id="carouselExampleDar"
+      class="carousel carousel-overlay slide"
+      data-bs-theme="dark"
+    >
+      <div class="carousel-inner">
+        <div
+          class="carousel-item active"
+          data-bs-interval="10000"
+          style="
+            background-image: url(asets/assets/Untitled-design-1-3\ \(2\).jpg);
+          "
+        >
+          <!-- <img src="..." class="d-block w-100 rounded-5" alt="..."> -->
+          <div
+            class="box1"
+            style="
+              width: 900px;
+              height: 500px;
+              background-color: rgba(30, 30, 30, 0.65);
+              margin-left: 200px;
+              border-radius: 15px;
+            "
+          >
+            <p style="padding-top: 50px">
+              Industry-Ready Professional Diploma (PDC) Practical, job-ready
+              tech skills in under a year. Master Software Engineering, Data
+              Science, Cybersecurity, UI/UX and other tech courses with real
+              projects, AI tools, and career support. No JAMB required. ◷ 6 – 12
+              Months ✪ Professional Diploma ◉ All Campuses Apply for PDC Ask on
+              WhatsApp
+            </p>
+          </div>
+        </div>
+        <div
+          class="carousel-item"
+          data-bs-interval="2000"
+          style="background-image: url(asets/assets/Untitled-design-6.png)"
+        >
+          <!-- <img src="..." class="d-block w-100 rounded-5" alt="..."> -->
+          <div
+            class="box1"
+            style="
+              width: 900px;
+              height: 500px;
+              background-color: rgba(30, 30, 30, 0.65);
+              margin-left: 200px;
+            "
+          >
+            <p style="padding-top: 50px">
+              Industry-Ready Professional Diploma (PDC) Practical, job-ready
+              tech skills in under a year. Master Software Engineering, Data
+              Science, Cybersecurity, UI/UX and other tech courses with real
+              projects, AI tools, and career support. No JAMB required. ◷ 6 – 12
+              Months ✪ Professional Diploma ◉ All Campuses Apply for PDC Ask on
+              WhatsApp
+            </p>
+          </div>
+        </div>
+        <div
+          class="carousel-item"
+          style="background-image: url(asets/assets/sqi-student-nd-scaled.jpg)"
+        >
+          <!-- <img src="..." class="d-block w-100 rounded-5" alt="..."> -->
+          <div
+            class="box1"
+            style="
+              width: 900px;
+              height: 500px;
+              background-color: rgba(30, 30, 30, 0.65);
+              margin-left: 200px;
+            "
+          >
+            <p style="padding-top: 50px">
+              Industry-Ready Professional Diploma (PDC) Practical, job-ready
+              tech skills in under a year. Master Software Engineering, Data
+              Science, Cybersecurity, UI/UX and other tech courses with real
+              projects, AI tools, and career support. No JAMB required. ◷ 6 – 12
+              Months ✪ Professional Diploma ◉ All Campuses Apply for PDC Ask on
+              WhatsApp
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-overlay-controls">
+        <button
+          class="btn-icon btn-sm btn-subtle theme-secondary"
+          type="button"
+          data-bs-target="#carouselExampleDar"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-icon-prev" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDar"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDar"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDar"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <button
+          class="btn-icon btn-sm btn-subtle theme-secondary"
+          type="button"
+          data-bs-target="#carouselExampleDar"
+          data-bs-slide="next"
+        >
+          <span class="carousel-icon-next" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="classexample">
+      <button type="button" class="btn-close" aria-label="close">
+        Button with data-bs-target
+      </button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.translate {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+     transform: translate(100px);
+}
+
+button{
+    background-color: #20c968;
+    border-radius: 10px;
+    width:250 ;
+    height: 50;
+    margin-top: 50px;
+    border: none
+    color: white;
+    font-weight:700 ;
+}
+
+button:hover {
+    box-shadow: 3px 3px 5px #20c968;
+     transform: translate(0px, -10px);
+}
+
+.rotate {
+    background-color: yellow;
+    height: 200px;
+    width:200px ;
+}
+
+.rotate:hover {
+    transform: rotate(-20deg);
+}
+
+.scale {
+    background-color: plum;
+    height: 200px;
+    width:200px ;
+}
+
+.scale:hover {
+    transform: scale(0.5, 0.5);
+}
+
+.skew {
+      background-color: peru;
+    height: 200px;
+    width:200px ;
+}
+
+.skew:hover {
+    transform: skewY(20deg);
+}
+
+.box-one {
+    width: 200px;
+    height: 300px;
+    background-color: goldenrod;
+    /* transition-property: background-color, width, transform;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+    transition-delay: 5s; */
+    transition:
+     background-color 5s ease-in-out 2s,
+     width 10s ease-in-out 5s,
+     transform 6s ease-in-out 4s;
+}
+
+.box-one:hover {
+    background-color: red;
+    width: 100px;
+    transform: rotate(30deg);
+}
+ .x-box {
+    width: 500px;
+    height: 300px;
+    background-color: olivedrab;
+    transition: width 0.5s, background-color 1s;
+ }
+
+ .x-box:hover {
+    width: 300px;
+    background-color: dodgerblue;
+ }

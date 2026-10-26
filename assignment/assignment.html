@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Units - When to Use rem, em, px and More</title>
+    <link rel="shortcut icon" href="assets/9892522 (3).jpg" type="image/x-icon">
+    <link rel="stylesheet" href="assignment.css">
+</head>
+<body>
+    <header class="top-nav">
+         <input type="search" class="search-bar" placeholder="Search 13,000+ news articles,tutorials, and books">
+         <img src="assets/fcc_primary (1).svg" alt="" class="header-image">
+        <div class="nav-icons">
+               <button class="nav-btn ww-btn">ww</button>
+               <button class="nav-btn menu-btn">Menu</button>
+               <button class="nav-btn donate-btn" style="border: 3px solid #FEAC32; color: black;" >Donate</button>
+        </div>
+    </header>
+
+    <header class="header1">
+        <p class="header1" p>Learn Software Engineering Fundamentals -  <a href="#" class="header-link">Try Our FREE Curriculum</a> </p>
+    </header>
+
+    <main>
+        <section class="content">
+           
+           <br> <p class="meta" style="font-size:13px;">JANUARY 25, 2024 /#CSS</p>
+            <h1 class="title">CSS Units - When to Use rem, em, px and <br> More</h1>
+
+            <div class="author">
+                <img src="assets/fine girl on the website.jpeg" alt="" class="author-img">
+                <span class="author-name">Esther Christopher</span>
+            </div>
+
+            <img src="assets/maths..instruments.jpg" alt="cover" class="maths-img"> <br> <br>
+            <p>CSS units allow you to measure and specify different property values. <br> 
+                You use them to modify CSS properties <br>such as margins, padding, height,
+                 and width to make them <br> compatible with devices of all screen sizes. <br>
+               <br> 
+             
+               <p>
+                CSS units have two basic types:
+                <ul>
+                    <li>Absolute units</li>
+                    <li>Relative units</li>
+                </ul>
+               </p> <br>
+
+               <p>
+                Absolute units are fixed and do not depend on the size of the parent element
+                 or the viewport. Examples of absolute units are pixels (px), points (pt), and 
+                 centimeters (cm). <br>
+
+                 <br>Relative units, on the other hand, are flexible – and just as the name implies,
+                 they are relative to the parent element’s size, the viewport’s size, or the root element’s 
+                 font size. <br>
+
+                 <br>Since there are a number of CSS unit types, you might have trouble deciding which unit to 
+                use for a particular measurement. This article will demonstrate the best use cases for each 
+                of these units. We'll focus on the most important and frequently used CSS units here: rem, em, vh, 
+                vw, %, and the all too familiar absolute unit – px. <br>
+               </p>
+
+                <br><p>
+                <h1 style="font-weight: 800;"> Table of Contents:</h1>
+                <ol style="text-indent: 10px;">
+                    <li>Rem (rem)</li>
+                    <li>Em (em)</li>
+                    <li>Percentages (%)</li>
+                    <li>Viewport height (vh)</li>
+                    <li>Viewport width (vw)</li>
+                    <li>[ch](#heading-ch)</li>
+                    <li>Pixels (px)</li>
+                </ol>
+               </p>
+
+              <br> <p>
+                 <h1>Rem (rem)</h1>
+                 The rem unit in CSS stands for "root em". It is a relative unit of measurement
+                  that is relative to the font size of the root element. One rem is equal to the 
+                  font size of the root element. The root element defaults to 16px in many browsers,
+                   so 1rem is equal to 16px.
+
+                 Let's look at an example to see how you can use rem:
+
+                 <br><br><img src="assets/container.png" alt="" class="code-img">
+
+                 <br><br><img src="assets/container2.png" alt="" class="code-img2" >
+               </p>
+
+               <br> <p>
+                 The h1 element is set to 2rem which means that it's two times the root <br> element,
+                 the html element. 2 x 16px = 32, so the h1 element is 32px. <br><br>
+
+                 Here's the root element at 16px:
+
+                 <br><br><img src="assets/Best practice for css.jpeg" alt="" class="bpfcss-img"> <br>
+
+                <p> <br>The font-size when the root element is at 16px <br>
+
+                     <br>Then in the below image, the root element was set to 20px so 2rem of the <br> h1
+                     element is 2 x 20px making the h1 text 40px.</p>
+
+                     <br><img src="assets/bold.bpfcss.jpeg" alt="" class="bpfcss-img2">
+               </p>
+
+               <p>
+               <br> The font-size when the root element is at 20px <br>
+
+             <br> In your code editor, as you change the base font size in the HTML selector <br> of the CSS
+             file, you can see how the font sizes defined in rem units also <br> adjusts equally. <br>
+
+             <br> By using rem units, you can easily scale the font size of the body elements <br> proportionally
+              to the HTML font size. <br>
+
+              <br>It's a good idea to use rem to set font sizes because it is designed to adapt <br> to the user's
+              browser preferences. This helps with accessibility. It is also <br> good for consistent scaling,
+               as changing the HTML font size will affect the <br> elements with rem units. <br>
+
+              <br>Using rem or em for padding or margin also offers advantages in terms <br> of providing a scalable 
+             and maintainable design. When you change the font <br> size at the top level, all rem values 
+             automatically gets updated and adjusts <br> according to the base front size. rem or em should
+             be used for margin or <br>padding depending on if you want the element to be relative to the
+             root <br> element or the parent. <br>
+
+             <br> <h1>Em (em)</h1>
+             Similar to rem, em is a relative unit of measurement. But unlike rem, em is <br> relative to the font size
+             of the parent element or the font-size of the nearest <br> parent with a defined font size. <br> <br>
+
+             Let's look at an example: <br>
+             
+             <br><img src="assets/em1.png" alt="" class="em-1"> <br> <br>
+              <br><img src="assets/em2.png" alt="" class="em-2"> <br>
+               </p>
+
+               <br><p>
+                The p element is set to 2em which means it is 2 times the font size of the <br> parent element. 
+                2 x 20 is 40px so the p element is 40px. <br>
+
+                 <br><img src="assets/paragraph.jpeg" alt="" class="paragraph"><br>
+
+                 <br><p>The font-size of the paragraph element set at 2em <br>
+
+                  <br>Let's look at another example</p> <br>
+
+                  <br><img src="assets/em3.png" alt="" class="em-3"><br>
+                  <br><img src="assets/em4.png" alt="" class="em-4"><br>
+
+                  <br><p>Here, the font size of the child-element is set to 2 times that of the parent <br> element.  
+                    That makes it 40px (2 x 20).</p><br> <br>
+
+                    <img src="assets/child.jpeg" alt="" class="child-img"> <br>
+
+                    <p>
+                         <br>The font-size of the child-element at 2em of the parent-element <br>
+
+                        <br> If you need to scale an element to be consistent with the parent,
+                        then em is <br> the right direction to go in. em is good for creating scalable
+                        and responsive <br> designs. <br>
+
+                        <br>It is recommended to use em for setting margin and padding. When you use <br> em for
+                        margin and padding, they adjust according to the font size of the <br> parent element.
+                        This creates a consistent design, especially when users <br> adjust their browser's
+                        default font size. When you set margin or padding <br> with em, the layouts also 
+                        become more flexible and adaptable, and <br> elements can scale in proportion. <br>
+
+                        <br>em is also important for media queries to enhance responsiveness and <br> adaptability. <br>
+
+                        <br><h1> Percentages (%)</h1>
+                        Percentages are relative units that render an element relative to the size of <br>the
+                        element's parent. They serve as a percentage of their containing block <br> and are 
+                        always relative to their nearest parent. <br>
+
+                        <br>Here's an example: <br>
+
+                        <br><img src="assets/percentageone.png" alt="" class="percent-1"><br> <br>
+                         <br><img src="assets/percentagetwo.png" alt="" class="percent-two"><br>
+                    </p>
+
+                    <br><p>
+                        Here, the box element is 50% the width and height of the parent container, <br> so it 
+                        takes up half of the container. <br>
+
+                        <br>The container is 80% of the viewport by width and height. If you try to <br> resize the 
+                        browser, you will notice that the percentage is maintained. <br> Similarly, the box within
+                         the container is 50% of the container by width and <br> height. <br>
+
+                        <br> <br><img src="assets/box.jpeg" alt="" class="color-box">
+                    </p>
+
+                    <br><p>
+                         <br>The box element at 50% of its containing element <br>
+
+                         <br>When you want an element to take up a certain amount of the containing <br>
+                         block, then you should go with percentages. <br>
+
+                         <br> Percentages can be used for positioning elements relative to their <br>
+                         containing element. This comes in handy when creating layouts where <br>
+                          elements need to be positioned based on a percentage of the parent. <br>
+
+                         <br>Setting widths and heights in percentages also allows elements to scale <br>
+                         relative to their containing element. <br>
+
+                          <br><h2> Viewport height (vh)</h2>
+                         vh is a relative unit of measurement that represents the visible height area <br> of
+                         the browser window. <br>
+
+                          <br>Here's an example of how it works: <br>
+                          <br><br><img src="assets/vh1.png" alt="" class="vh-1"><br>
+                          <br><br><img src="assets/vh2.png" alt="" class="vh-2"><br>
+
+                          <br> <p>This code snippet shows the viewport-height element 
+                            set t0 100vh so it <br> covers all of the viewport height.</p> <br>
+
+                          <br><img src="assets/191234F1-D770-46AB-837B-3C0FFCD338C3_1_201_a (1).jpeg" alt="" class="img-vh"> <br>
+
+                          <br><p>The viewport area covered by 100vh</p> <br>
+                          <img src="assets/vh3.png" alt="" class="vh-3"><br>
+                           <br> <p>Let's change it slightly:</p><br>
+                           <br><img src="assets/vh4.png" alt="" class="vh-4"><br>
+                           <br><img src="assets/vh5.png" alt="" class="vh-5"><br>
+                           <br> <p>In the above example, the relative-height element is set to 40vh,
+                             so it <br>covers that fraction of the viewport height.</p><br>
+                             <img src="assets/F45DD133-6DC6-4869-A3A7-844737B7F18F_1_201_a (1).jpeg" alt="" class="vh40-img">
+
+                            <br> <p>
+                                 <br>The viewport area covered by 40vh <br>
+
+                                 <br>Using vh for height allows elements to maintain the set height of the <br>viewport.
+                                 This is particularly useful when you want an element to take up a <br> certain
+                                  percentage of the screen's height. <br>
+
+                                 <br>vh can also be used to set font sizes that are responsive to the viewport <br> height. 
+                                This is useful for responsive typography. When you don't want an <br> element to be
+                                 relative to the parent, you can use vh. <br>
+
+                                 <br>There can be inconsistencies in the way devices interpret the vh unit due <br> to variation
+                                 in browsers so make sure you use it with caution to prevent <br> problems. <br>
+
+                                 <br><h1>Viewport width (vw)</h1>
+                                 <br>vw is similar to vh but vw refers to the width of the browser window. It is <br> used to
+                                 set elements based on the horizontal axis of the browser window. <br>
+
+                                 <br>Here's an example: <br>
+
+                                 <br><img src="assets/vw1.png" alt="" class="vw-1"><br>
+                                  <br><p>Here, the box is specified as 50vw of the overall viewport width. As the <br> browser 
+                                    shrinks and increases, watch how the box adjusts to maintain the <br> specified width.</p><br>
+                                   <br> <img src="assets/EE2681DC-B4DB-4D9F-84E7-B7CBC435684B_1_201_a.jpeg" alt="" class="vw-2"><br>
+                                   <br><p>
+                                      The box element occupying 50% of the viewport width <br>
+
+                                      <br>vw is particularly useful and encouraged when you want an element to take <br> a 
+                                      certain width of the viewport. vw is also used for font sizes in media query <br> 
+                                      for responsive typography. <br>
+
+                                      <br><h3>ch</h3>
+                                      ch is a relative unit that scales based on the width of characters. 1ch is <br> equal
+                                      to the width of the "0" character in the current font.
+                                    </p><br>
+                                     <br><img src="assets/ch1.png" alt="" class="ch-1"><br>
+                                     <br><img src="assets/ch2.png" alt="" class="ch-2"><br>
+
+                                    <br> <p>
+                                        <br>The font size of the text inside the [p] element is set to be twice the width <br> of
+                                        the "0" character in the current font. <br>
+
+                                        <br>ch is particularly useful for defining the max character length on a single <br> line.
+                                         It provides a size relative to the width of characters, making it flexible,<br> 
+                                         adaptable, and enhances readability. It allows you to set a max-width for <br> text 
+                                         containers based on the width of characters.
+                                     </p><br>
+
+                                     <br> <p>
+                                       <h1> Pixels (px)</h1><br>
+                                        <br>px is an absolute unit of measurement used to specify length and sizes. px <br>is a 
+                                        fixed unit and should be used sparingly and with caution for responsive <br> design.
+                                     </p><br>
+                                     <br><img src="assets/px1.png" alt="" class="px-1"><br>
+                                     <br><img src="assets/px2.png" alt="" class="px-2"><br>
+
+                                    <br> <p>
+                                       <br> In this snippet, the size of the [p] text remains a certain size. It remains <br> fixed
+                                        at 16px and doesn't change regardless of whether the <br> size of the browser changes. <br>
+
+                                        <br>When you resize the browser, you will observe that the container doesn't <br> scale 
+                                        according to the viewport, and neither does the text scale according <br> to the container. <br>
+
+                                        <br>The main reason why using px is not always recommended for responsive <br> design lies in
+                                        its fixed nature. Unlike relative units, such as percentages, em, <br> rem, and viewport 
+                                        units (vw, vh), px does not adjust based on the user's <br> preferences or the size of the
+                                         viewport. <br>
+
+                                         <br>px is useful when you want to specify a fixed size of an element, such as a <br> border size 
+                                         or an image size. <br>
+
+                                         <br>An example: <br>
+                                         <br><img src="assets/px3.png" alt="" class="px-3"><br>
+                                     </p><br>
+
+                                     <br><p>
+                                        <br><h1>Conclusion</h1>
+                                        These are the most frequently used units in CSS, so it's important to be <br> familiar
+                                         with when to use them. <br>
+
+                                        <br>To set font sizes, you'll commonly use rem or ch. For width, percentages <br>are often 
+                                        recommended. You can also consider using vw and ch. For <br> height, consider using %, rem,
+                                        or vh.
+
+                                         <br>For padding or margin, you'll typically use rem or em depending on your <br> specific
+                                        requirements. <br>
+
+                                        <br>Feel free to refer back to this article whenever you need guidance on the <br> best units
+                                        for setting measurements or lengths. <br>
+
+                                         <br>Thanks for reading! <br>
+                                     </p><br>
+                             </p>
+                    </p>
+               </p>
+
+                
+        </section>
+
+    </main>
+</body>
+</html>
